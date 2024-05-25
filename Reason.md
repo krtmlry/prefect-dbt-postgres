@@ -12,8 +12,8 @@ But after some time I realized that all of my dim tables have the same number of
 
 Best example would be the images below:
 
-![dim_customers]()
-![dim_products]()
-![order_details]()
+![dim_customers](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/customer_dim.png)
+![dim_products](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/dim_products.png)
+![order_details](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/order_details.png)
 
-Both dimension tables have the same number of rows and this was something that I didn't understand when I first started this project.
+Both dimension tables have the same number of rows with the order details table and this was something that I didn't understand when I first started this project.
