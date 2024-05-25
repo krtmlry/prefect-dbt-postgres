@@ -19,4 +19,7 @@ orchestrated the entire process
 
 ### Project architecture
 
-![image](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/datamodel.png)
+![image](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/project%20diagram.png)
+
+The data will be extracted from a local csv file and will be loaded into a staging table.
+After data is loaded the dbt models will be triggered to transform the data accordingly.
