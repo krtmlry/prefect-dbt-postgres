@@ -11,4 +11,7 @@ Reasons for updating this project can be read here.
 
 ### Data model diagram
 
-![image](files/Users/jzhang/Desktop/Isolated.png)
+![image](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/datamodel.png)
+
+
+### Process diagram
