@@ -6,7 +6,10 @@ Reasons for updating this project can be read here.
 
 ### Files
 `dbt_sf_test` - contains dbt related files
-`prefect_flows` - contains the python script that orchestrated the entire process
+
+`prefect_flows` - contains the python script that
+orchestrated the entire process
+
 `Dataset` can be seen [here](https://github.com/krtmlry/datasets/tree/main/merged_sales_csv)
 
 ### Data model diagram
@@ -15,3 +18,4 @@ Reasons for updating this project can be read here.
 
 
 ### Process diagram
+

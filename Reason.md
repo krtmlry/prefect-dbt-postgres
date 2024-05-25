@@ -11,7 +11,9 @@ After surrogate keys were added I then performed joins to create a fact table.
 But after some time I realized that all of my dim tables have the same number of rows with my fact table which was a mistake on my part.
 
 Best example would be the images below:
-![dim_customers](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/dim_customers.png)
-![dim_products](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/product_dim.png)
+
+![dim_customers]()
+![dim_products]()
+![order_details]()
 
 Both dimension tables have the same number of rows and this was something that I didn't understand when I first started this project.
