@@ -4,6 +4,7 @@ with final_fact_sales as (
 	select
 	a.order_sk_id,
 	a.order_id,
+	c.customer_sk_id as customer_id,
 	b.product_id,
 	b.price_each,
 	a.qty_ordered,
@@ -20,6 +21,7 @@ with final_fact_sales as (
 	left join {{ref('dim_stores')}} as d on a.store = d.store
 	left join {{ref('dim_payment_methods')}} as e on a.payment_method = e.payment_method
 	left join {{ref('dim_order_dates')}} as f on a.order_date = f.order_time_stamp
+	order by order_sk_id asc
 )
 
 select *

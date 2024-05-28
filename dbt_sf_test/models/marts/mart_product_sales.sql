@@ -5,12 +5,14 @@ with mart_product_sales as (
 	select
 	--order_sk_id, --optional
 	a.order_id,
+	c.customer_sk_id as customer_id,
 	b.product,
 	b.price_each,
 	a.qty_ordered,
 	a.total_price,
 	f.order_time_stamp,
 	f.day_of_week,
+	f.month_name,
 	c.purchase_address,
 	c.city,
 	d.store,
