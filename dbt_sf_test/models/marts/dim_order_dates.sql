@@ -2,7 +2,7 @@
 
 with dim_order_dates as (
 	select
-		row_number() over() as orderdate_sk_id,
+		row_number() over(order by order_date asc) as orderdate_sk_id,
 		order_date as order_time_stamp,
 		date(order_date) as date,
 		extract(year from order_date) as year,
