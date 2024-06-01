@@ -18,19 +18,19 @@ See pictures below for a better overview:
 
 `customer_dim`
 
-![customer_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/customer_dim.png)
+![customer_dim](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/customer_dim.png)
 
 `product_dim`
 
-![product_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/products_dim.png)
+![product_dim](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/product_dim.png)
 
 `datetime_dim`
 
-![datetime_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/datetime_dim.png)
+![datetime_dim](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/datetime_dim.png)
 
 `order_details` - fact table
 
-![order_details](https://github.com/krtmlry/sf_product_sales/blob/main/img/order_details.png)
+![order_details](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/order_details.png)
 
 
 All dimension tables have the same number of rows with the fact table and based on my assumption this isnt the way to go.
