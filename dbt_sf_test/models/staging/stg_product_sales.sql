@@ -6,7 +6,7 @@ with stg_product_sales as (
 		product,
 		price_each,
 		qty_ordered,
-		(price_each * qty_ordered)::numeric as total_price,
+		(price_each * qty_ordered)::numeric(10,2) as total_price,
 		order_date,
 		purchase_address,
 		store,

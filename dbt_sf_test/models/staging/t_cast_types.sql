@@ -1,6 +1,6 @@
 {{config(materialized='view')}}
 
-with cast_types as (
+with t_cast_types as (
 	select
 		cast("Order ID" as int) as order_id,
 		cast("Product" as varchar) as product,
@@ -13,4 +13,4 @@ with cast_types as (
 	from {{ref('t_rm_nulls_dups')}}
 )
 select *
-from cast_types
+from t_cast_types
