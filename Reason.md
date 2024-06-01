@@ -1,19 +1,36 @@
-# Reason for updating the project.
+# Reason for updating the project
 
-The previous [project](https://github.com/krtmlry/product_sales_2019) was my first time creating an etl pipeline and I was only following from a youtube video and I realized that it had some mistakes(based on my assumption).
+This old etl pipeline [project]() of mine was my first time creating an end-to-end etl pipeline and I was only following a video tutorial.
 
-The mistake was on the data modelling part where after all the data cleaning was done.
+There are some mistakes on that project particularly on the data modelling part.
 
-I divided the table into fact and dim tables where I added surrogate keys to each tables.
+---
 
-After surrogate keys were added I then performed joins to create a fact table.
+## Data modelling problem
 
-But after some time I realized that all of my dim tables have the same number of rows with my fact table which was a mistake on my part.
+After all data cleaning process was done. I created dimension tables for customers, order dates and products.
 
-Best example would be the images below:
+The dim tables should just contain unique values for customers, order dates and products but instead I treated all rows as unique values and created a surrogate key column to make a temporary primary key to be used for joining the dim tables to the fact tables.
 
-![dim_customers](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/customer_dim.png)
-![dim_products](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/dim_products.png)
-![order_details](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/order_details.png)
+So after the entire process finished, I now have 3 dimension tables that has the same number of rows with my fact table.
 
-Both dimension tables have the same number of rows with the order details table and this was something that I didn't understand when I first started this project.
+See pictures below for a better overview:
+
+`customer_dim`
+
+![customer_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/customer_dim.png)
+
+`product_dim`
+
+![product_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/products_dim.png)
+
+`datetime_dim`
+
+![datetime_dim](https://github.com/krtmlry/sf_product_sales/blob/main/img/datetime_dim.png)
+
+`order_details` - fact table
+
+![order_details](https://github.com/krtmlry/sf_product_sales/blob/main/img/order_details.png)
+
+
+All dimension tables have the same number of rows with the fact table and based on my assumption this isnt the way to go.
