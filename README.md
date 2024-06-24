@@ -14,7 +14,7 @@ orchestrated the entire process
 
 ### Data model diagram
 
-![image](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/datamodeldiagram.png)
+![image](https://github.com/krtmlry/prefect-dbt-postgres/blob/main/img/datamodeldiagram_new.png)
 
 
 ### Project architecture
