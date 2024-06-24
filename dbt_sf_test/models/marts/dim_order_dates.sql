@@ -15,7 +15,7 @@ with dim_order_dates as (
 		extract(minute from order_date) as minute
 	from (select
 		distinct order_date
-	from {{ref('stg_fact_sales')}}) distinct_order_date
+	from {{ref('final_product_sales')}}) distinct_order_date
 )
 
 select *
